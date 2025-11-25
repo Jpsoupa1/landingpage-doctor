@@ -1,6 +1,8 @@
 import { Award, GraduationCap, Heart, Shield } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+
+
 export function About() {
   return (
     <section id="sobre" className="py-20 md:py-32 bg-white">
@@ -23,16 +25,16 @@ export function About() {
           <div className="space-y-8">
             <div className="space-y-4">
               <div className="inline-block">
-                <div 
+                <div
                   className="text-[#d4a574] uppercase tracking-wider mb-2"
                   style={{ fontFamily: 'var(--font-sans)' }}
                 >
-                  Sobre o Dr. Silva
+                  Sobre o Dr. Mauro
                 </div>
                 <div className="w-20 h-1 bg-[#d4a574]"></div>
               </div>
-              
-              <h2 
+
+              <h2
                 className="text-3xl md:text-4xl lg:text-5xl text-[#0e1c36]"
                 style={{ fontFamily: 'var(--font-serif)' }}
               >
@@ -42,19 +44,19 @@ export function About() {
 
             <div className="space-y-4 text-gray-700" style={{ fontFamily: 'var(--font-sans)' }}>
               <p className="text-lg leading-relaxed">
-                Com mais de 15 anos de experiência em mastologia estética, o Dr. André Silva é 
-                reconhecido como um dos principais especialistas em cirurgias mamárias do país, 
+                Com mais de 15 anos de experiência em mastologia estética, o Dr. Mauro Passos é
+                reconhecido como um dos principais especialistas em cirurgias mamárias do país,
                 combinando técnicas avançadas com sensibilidade artística e cuidado personalizado.
               </p>
               <p className="leading-relaxed">
-                Formado pela Universidade de São Paulo e com especializações em renomadas 
-                instituições internacionais, o Dr. Silva é membro titular da Sociedade 
-                Brasileira de Mastologia (SBM) e da Sociedade Brasileira de Cirurgia Plástica (SBCP), 
+                Formado pela Universidade Federal do Pará e com especializações em renomadas
+                instituições internacionais, o Dr. Mauro é membro titular da Sociedade
+                Brasileira de Mastologia (SBM) e da Sociedade Brasileira de Cirurgia Plástica (SBCP),
                 dedicando-se exclusivamente a procedimentos estéticos mamários.
               </p>
               <p className="leading-relaxed">
-                Sua filosofia de trabalho baseia-se em criar resultados naturais e harmoniosos, 
-                sempre respeitando as proporções corporais e os desejos de cada paciente. 
+                Sua filosofia de trabalho baseia-se em criar resultados naturais e harmoniosos,
+                sempre respeitando as proporções corporais e os desejos de cada paciente.
                 Especializado em mamoplastias de aumento, redução, lifting e reconstrução mamária.
               </p>
             </div>

@@ -13,7 +13,8 @@ import {
   Youtube,
   Send,
 } from "lucide-react";
-import { toast } from "sonner@2.0.3";
+import { toast } from "sonner";
+
 
 export function Footer() {
   const [formData, setFormData] = useState({
@@ -247,7 +248,7 @@ export function Footer() {
                 </p>
                 <p>CRM: 123.456 | RQE: 12345</p>
                 <p className="mt-4 text-xs">
-                  Membro da Sociedade Brasileira de Mastologia (SBM) 
+                  Membro da Sociedade Brasileira de Mastologia (SBM)
                   e Sociedade Brasileira de Cirurgia Plástica (SBCP)
                 </p>
               </div>

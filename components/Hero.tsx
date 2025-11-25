@@ -2,6 +2,7 @@ import { Button } from "./ui/button";
 import { Calendar, Phone } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+
 export function Hero() {
   return (
     <section className="relative min-h-screen bg-[#0e1c36] overflow-hidden">

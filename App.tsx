@@ -6,6 +6,8 @@ import { Testimonials } from "./components/Testimonials";
 import { Footer } from "./components/Footer";
 import { Toaster } from "./components/ui/sonner";
 
+
+
 export default function App() {
   return (
     <div className="min-h-screen">

@@ -4,6 +4,8 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight, Star, Quote } from "lucide-react";
 import { Button } from "./ui/button";
 
+
+
 interface Testimonial {
   id: string;
   name: string;
@@ -67,7 +69,7 @@ export function Testimonials() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block">
-            <div 
+            <div
               className="text-[#d4a574] uppercase tracking-wider mb-2"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
@@ -75,15 +77,15 @@ export function Testimonials() {
             </div>
             <div className="w-20 h-1 bg-[#d4a574] mx-auto"></div>
           </div>
-          
-          <h2 
+
+          <h2
             className="text-3xl md:text-4xl lg:text-5xl text-[#0e1c36] max-w-3xl mx-auto"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
             O Que Dizem Nossos Pacientes
           </h2>
 
-          <p 
+          <p
             className="text-lg text-gray-700 max-w-2xl mx-auto"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
@@ -97,9 +99,8 @@ export function Testimonials() {
             {getVisibleTestimonials().map((testimonial, index) => (
               <div
                 key={`${testimonial.id}-${index}`}
-                className={`bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 ${
-                  index === 0 ? 'md:scale-105' : 'md:scale-95 md:opacity-90'
-                }`}
+                className={`bg-white rounded-2xl p-8 shadow-lg transition-all duration-300 ${index === 0 ? 'md:scale-105' : 'md:scale-95 md:opacity-90'
+                  }`}
               >
                 {/* Quote Icon */}
                 <div className="mb-6">
@@ -117,7 +118,7 @@ export function Testimonials() {
                 </div>
 
                 {/* Testimonial Text */}
-                <p 
+                <p
                   className="text-gray-700 mb-6 leading-relaxed"
                   style={{ fontFamily: 'var(--font-sans)' }}
                 >
@@ -126,13 +127,13 @@ export function Testimonials() {
 
                 {/* Author */}
                 <div className="border-t border-gray-200 pt-4">
-                  <div 
+                  <div
                     className="text-[#0e1c36]"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
                     {testimonial.name}
                   </div>
-                  <div 
+                  <div
                     className="text-sm text-[#d4a574]"
                     style={{ fontFamily: 'var(--font-sans)' }}
                   >
@@ -160,11 +161,10 @@ export function Testimonials() {
                 <button
                   key={index}
                   onClick={() => setCurrentIndex(index)}
-                  className={`w-2 h-2 rounded-full transition-all ${
-                    index === currentIndex
+                  className={`w-2 h-2 rounded-full transition-all ${index === currentIndex
                       ? 'bg-[#d4a574] w-8'
                       : 'bg-gray-300 hover:bg-gray-400'
-                  }`}
+                    }`}
                 />
               ))}
             </div>

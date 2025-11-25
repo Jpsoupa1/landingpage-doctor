@@ -4,6 +4,8 @@ import { useState } from "react";
 import { Play, X } from "lucide-react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
 
+
+
 interface VideoItem {
   id: string;
   title: string;
@@ -47,7 +49,7 @@ export function VideoGallery() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block">
-            <div 
+            <div
               className="text-[#d4a574] uppercase tracking-wider mb-2"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
@@ -55,15 +57,15 @@ export function VideoGallery() {
             </div>
             <div className="w-20 h-1 bg-[#d4a574] mx-auto"></div>
           </div>
-          
-          <h2 
+
+          <h2
             className="text-3xl md:text-4xl lg:text-5xl text-[#0e1c36] max-w-3xl mx-auto"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
             Procedimentos Estéticos Mamários
           </h2>
 
-          <p 
+          <p
             className="text-lg text-gray-700 max-w-2xl mx-auto"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
@@ -85,7 +87,7 @@ export function VideoGallery() {
                   alt={video.title}
                   className="w-full h-full object-cover"
                 />
-                
+
                 {/* Overlay */}
                 <div className="absolute inset-0 bg-gradient-to-t from-[#0e1c36] via-[#0e1c36]/50 to-transparent opacity-80 group-hover:opacity-90 transition-opacity"></div>
 
@@ -98,13 +100,13 @@ export function VideoGallery() {
 
                 {/* Content */}
                 <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-                  <h3 
+                  <h3
                     className="text-xl mb-2"
                     style={{ fontFamily: 'var(--font-serif)' }}
                   >
                     {video.title}
                   </h3>
-                  <p 
+                  <p
                     className="text-sm text-gray-300"
                     style={{ fontFamily: 'var(--font-sans)' }}
                   >
@@ -118,7 +120,7 @@ export function VideoGallery() {
 
         {/* Video Modal */}
         {selectedVideo && (
-          <div 
+          <div
             className="fixed inset-0 bg-black/90 z-50 flex items-center justify-center p-4"
             onClick={() => setSelectedVideo(null)}
           >
@@ -129,15 +131,15 @@ export function VideoGallery() {
               >
                 <X className="w-8 h-8" />
               </button>
-              
+
               <div className="bg-white rounded-2xl p-8 text-center">
-                <h3 
+                <h3
                   className="text-2xl text-[#0e1c36] mb-4"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >
                   {selectedVideo.title}
                 </h3>
-                <p 
+                <p
                   className="text-gray-700 mb-6"
                   style={{ fontFamily: 'var(--font-sans)' }}
                 >

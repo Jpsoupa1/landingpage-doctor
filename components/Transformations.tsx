@@ -1,3 +1,4 @@
+
 import { BeforeAfterSlider } from "./BeforeAfterSlider";
 
 export function Transformations() {
@@ -6,7 +7,7 @@ export function Transformations() {
       <div className="container mx-auto px-4">
         <div className="text-center space-y-4 mb-16">
           <div className="inline-block">
-            <div 
+            <div
               className="text-[#d4a574] uppercase tracking-wider mb-2"
               style={{ fontFamily: 'var(--font-sans)' }}
             >
@@ -14,15 +15,15 @@ export function Transformations() {
             </div>
             <div className="w-20 h-1 bg-[#d4a574] mx-auto"></div>
           </div>
-          
-          <h2 
+
+          <h2
             className="text-3xl md:text-4xl lg:text-5xl text-white max-w-3xl mx-auto"
             style={{ fontFamily: 'var(--font-serif)' }}
           >
             Transformações Mamárias
           </h2>
 
-          <p 
+          <p
             className="text-lg text-gray-300 max-w-2xl mx-auto"
             style={{ fontFamily: 'var(--font-sans)' }}
           >
@@ -50,7 +51,7 @@ export function Transformations() {
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-[#d4a574]/20">
             <div className="grid md:grid-cols-3 gap-8 text-center">
               <div>
-                <div 
+                <div
                   className="text-2xl text-[#d4a574] mb-2"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >
@@ -61,7 +62,7 @@ export function Transformations() {
                 </p>
               </div>
               <div>
-                <div 
+                <div
                   className="text-2xl text-[#d4a574] mb-2"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >
@@ -72,7 +73,7 @@ export function Transformations() {
                 </p>
               </div>
               <div>
-                <div 
+                <div
                   className="text-2xl text-[#d4a574] mb-2"
                   style={{ fontFamily: 'var(--font-serif)' }}
                 >

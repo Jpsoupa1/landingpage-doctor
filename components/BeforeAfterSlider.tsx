@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { ImageWithFallback } from "./figma/ImageWithFallback";
+import React from "react";
+
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
